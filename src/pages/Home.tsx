@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import Footer from '../components/Footer/index';
-import ThreeAnimation from '../components/Animation/ThreeAnimation';
 import FooterTest from '../components/Footer';
-import ContactSection from '../components/Footer/Connect';
+import ContactSection from '../components/Connect';
 
 
 const Home: React.FC = () => {
