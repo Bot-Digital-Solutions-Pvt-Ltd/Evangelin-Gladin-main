@@ -8,7 +8,6 @@ import Blog from './pages/Blog';
 import Results from './pages/Results';
 import Contact from './pages/Contact';
 import './styles/style.css';
-import './components/ContactUs/styles.module.css';
 import './components/custom/CustomButton/styles.module.css';
 import './components/custom/Image/styles.module.css';
 
