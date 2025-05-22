@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import FooterTest from '../components/Footer';
-import ContactSection from '../components/Connect';
+import ContactSection from '../components/connection/Connect';
+import QuizPopup from '../components/QuizApp';
 
 
 const Home: React.FC = () => {
   return (
 
     <>
-      <section className="home" id="home">
-        <div className="home-content">
+      <section className="home flex flex-col items-center sm:flex-row" id="home">
+        <div className="home-content text-center flex flex-col lg:text-left max-w-2xl mx-auto lg:mx-0 mt-24 ">
           <h3>Hello, I am</h3>
           <h1>Evangelin Gladin</h1>
           <h2>"Helping Entrepreneurs Scale Smarter — Not Harder."</h2>
@@ -17,7 +18,7 @@ const Home: React.FC = () => {
             <br /> Strategic support for founders who need clarity, momentum, and scalable marketing systems.
           </p>
 
-          <div className="social-media">
+          <div className="social-media mt-[-10px] sm:mt-0">
             <a href="https://www.facebook.com/evangelinglen">
               <i className="bx bxl-facebook"></i>
             </a>
@@ -60,9 +61,14 @@ const Home: React.FC = () => {
           </div>
           <div className="overlay"></div>
         </div>
-        <div className="home-img">
-          <img src="/images/Pic.png" alt="Profile" />
+        <div className="home-img ">
+          <img
+            src="/images/Pic.png"
+            alt="Profile"
+            className="max-h-[500px] w-full object-contain"
+          />
         </div>
+        <QuizPopup />
       </section>
       <ContactSection />
       <FooterTest />

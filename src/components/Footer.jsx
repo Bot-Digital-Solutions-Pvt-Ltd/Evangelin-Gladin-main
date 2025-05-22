@@ -68,9 +68,9 @@ export default function FooterTest() {
 
       <div className="mt-12 flex border-t gap-2 border-gray-700 pt-4 text-start text-xl text-gray-400">
         <span className='font-bold text-white'>© 2024 TheBot. All rights reserved.</span>
-        <div className="">
-          <a href="" className="hover:underline">Privacy Policy</a>
-          <a href="" className="hover:underline">Terms & Conditions</a>
+        <div>
+          <a href="/privacy-policy" className="hover:underline">Privacy Policy</a>
+          <a href="/terms" className="hover:underline">Terms & Conditions</a>
         </div>
       </div>
     </footer>
